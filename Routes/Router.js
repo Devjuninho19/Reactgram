@@ -1,8 +1,12 @@
 import express from 'express';
+import userRoutes from './UserRoutes.js'; // Use a importação ES6 e adicione .js
 
-const router = express.Router(); // Use Router() em vez de express()
+const router = express.Router(); // Use Router() corretamente
 
-// teste de rota
+// Usando as rotas de usuário
+router.use("/api/users", userRoutes);
+
+// Teste de rota
 router.get("/", (req, res) => {
     res.send("API working");
 });
