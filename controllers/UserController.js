@@ -13,9 +13,6 @@ const generateToken = (id) => {
 
 // Register User and sign in
 export const register = async (req, res) => {
-  // Lógica para registro do usuário (exemplo)
-  res.send("registro"); // Corrigi para usar res.send()
+  res.send("Registro");
 };
 
-// Exporta o token gerado, se necessário
-export { generateToken };
